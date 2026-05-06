@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{ partial "highlights.html" . }}
+{{ partial "sections.html" . }}
+{{ partial "posts.html" .}}
+{{ if .Site.Params.mastodon.timeline }}
+{{ partial "mastodon-timeline.html" . }}
+{{ end }}
+{{ end }}
+{{ define "htmlAfterFooter" }}
+{{ if .Site.Params.htmlAfterFooter }}
+{{ partial "custom-html-after-footer.html" . }}
+{{ end }}
+{{ if .Site.Params.mastodon.timeline }}
+{{ $mastodonEmbeTtimeline := resources.Get "js/mastodon-embed-timeline/mastodon-timeline.umd.js" | fingerprint }}
+<script src="{{ $mastodonEmbeTtimeline.RelPermalink }}"
+        integrity="{{ $mastodonEmbeTtimeline.Data.Integrity }}"
+        crossorigin="anonymous"></script>
+<script>
+    const myTimeline = new MastodonTimeline.Init({
+      instanceUrl: {{ .Site.Params.mastodon.instance }},
+      timelineType: {{ .Site.Params.mastodon.timelineType }},
+      userId: {{ .Site.Params.mastodon.userId }},
+      profileName: {{ .Site.Params.mastodon.userName }},
+      hideReplies: {{ .Site.Params.mastodon.hideReplies }},
+      hideCounterBar: {{ .Site.Params.mastodon.hideCounterBar }},
+      btnSeeMore: {{ .Site.Params.mastodon.btnSeeMore }},
+      btnReload: {{ .Site.Params.mastodon.btnReload }},
+    });
+</script>
+{{ end }}
+{{ end }}

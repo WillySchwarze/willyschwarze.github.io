@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Förderverein</title>
+    <link>http://localhost:1313/sections/</link>
+    <description>Recent content on Förderverein</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <atom:link href="http://localhost:1313/sections/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unsere Aufgaben</title>
+      <link>http://localhost:1313/sections/aufgaben/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sections/aufgaben/</guid>
+      <description>&lt;p&gt;Wir sind der Förderverein der Melli-Beese-Grund- und Oberschule.&#xA;Unser Vereinsleben ist zwanglos, hinter keiner Veranstaltung steht ein Muß. Was wir tun, tun&#xA;wir für unsere Kinder. Jeder ist willkommen! Helfen auch Sie ob finanziell&#xA;oder aktiv und&#xA;werden sie Mitglied im Förderverein&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Beitritt und Support</title>
+      <link>http://localhost:1313/sections/beitritt-und-support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sections/beitritt-und-support/</guid>
+      <description>Mitglied werden und unsere Partnerprogramme für zusätzliche Spendengelder. Hier erfahren Sie, wie Sie uns beitreten können und welche Unterstützungsmöglichkeiten Sie haben. Gemeinsam für den Alltag unserer Kinder!</description>
+    </item>
+    <item>
+      <title>Planung</title>
+      <link>http://localhost:1313/sections/planung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sections/planung/</guid>
+      <description>&lt;p&gt;Donec vestibulum, justo eu lobortis accumsan, arcu diam euismod massa, molestie&#xA;lobortis leo libero id tellus. Aenean commodo massa ac diam accumsan, a posuere&#xA;ex volutpat. Donec ullamcorper et risus a accumsan. Morbi vitae consectetur&#xA;erat. Curabitur tincidunt fermentum aliquet. Nullam at lacus ac justo dignissim&#xA;pellentesque. Mauris malesuada rutrum nisi. Proin gravida, turpis vitae sagittis&#xA;vehicula, nibh nunc iaculis arcu, eget tincidunt quam ante id enim. Ut sit amet&#xA;arcu a quam scelerisque sodales. Morbi vitae nunc dui. Cras ut congue elit.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

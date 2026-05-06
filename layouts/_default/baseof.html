@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html lang="{{ .Site.Language.Lang }}">
+  {{ partial "head.html" .}}
+  {{ partial "banner.html" .}}
+  {{ if .Site.Params.maintenance }}
+  {{ partial "maintenance.html" . }}
+{{ else }}
+  <body class="d-flex flex-column min-vh-100">
+    {{ block "main" . }} {{ end }}
+    {{ partial "header.html" . }}
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+    {{ block "htmlAfterFooter" . }} {{ end }}
+  </body>
+  {{ end }}
+</html>

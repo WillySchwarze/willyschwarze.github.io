@@ -1,0 +1,48 @@
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+<div class="posts">
+  <div class="container">
+    <div class="row">
+      
+      <h2 >Aktuelle Projekte:</h2>
+
+      {{ range first 3 (sort $posts "Date" "desc") }}
+
+      <div class="col-md-4 mb-3">
+        <a href="{{ .Permalink }}" class="index-anchor">
+
+          <div class="card h-100">
+
+            {{ if .Params.img }}
+            {{ with .Resources.Match .Params.img }}
+            {{ range . }}
+            <img src="{{ .RelPermalink }}" class="card-img-top">
+            {{ end }}
+            {{ end }}
+            {{ end }}
+
+            <div class="card-body">
+
+              <h3 class="card-title">{{ .Title }}</h3>
+
+              <div class="card-text">
+                <small>{{ .Summary }}</small>
+              </div>
+
+            </div>
+
+          </div>
+
+        </a>
+        
+      </div>
+
+      {{ end }}
+
+      <div class="text-center mt-4">
+        <a href="/posts" class="btn btn-primary posts-button">
+            Alle Projekte ansehen →
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

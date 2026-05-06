@@ -1,0 +1,41 @@
+{{ if ne .Params.showInCards false }}
+
+{{ $cards := where (.Resources.Match "*.md") ".Params.showInCards" "ne" false }}
+{{ $count := len $cards }}
+
+<div class="container-fluid">
+  <div class="row">
+
+    {{ range $cards }}
+
+    {{ $colClass := "col-lg-4 col-md-6" }}
+
+    {{ if eq $count 1 }}
+      {{ $colClass = "col-12" }}
+    {{ else if eq $count 2 }}
+      {{ $colClass = "col-md-6" }}
+    {{ end }}
+
+    <div class="col-12 mb-3">
+      <div class="card content-card h-100">
+        <div class="card-body">
+          <h2 class="card-title">
+          {{ if .Params.icon }}          
+            <i class="bi bi-{{ .Params.icon }}"></i>
+          {{ end }}
+          {{ .Title }}
+          </h2>
+          <div class="card-text">
+            <p>{{ .Content }}</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    {{ end }}
+
+  </div>
+</div>
+
+{{ end }}

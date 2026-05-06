@@ -1,0 +1,38 @@
+{{ $highlights_pages := where .Site.RegularPages "Section" "highlights" }}
+<div class="highlights">
+  <div class="container">
+    <div class="row">
+
+      {{ range $highlights_pages }}
+
+      <div class="col-md-4 mb-3">
+            <div class="card h-100 highlight-card">
+              <div class="card-body text-center highlight-body">
+
+                <div class="highlight-icon">
+                  <i class="bi {{ .Params.icon }} fs-1"></i>
+                </div>
+
+                <h3 class="highlight-title">
+                  {{ if eq .Title "Projekte" }}
+                    {{ len (where .Site.RegularPages "Section" "posts") }} Projekte
+                  {{ else }}
+                    {{ .Title }}
+                  {{ end }}
+                </h3>
+
+                <div class="highlight-info">
+                    {{ .Content }}
+                </div>
+
+              </div>
+            
+                
+
+          </div>
+
+        </div>
+        {{ end }}
+      </div>
+    </div>
+</div>

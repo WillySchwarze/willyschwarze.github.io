@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>index on Förderverein</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in index on Förderverein</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stromerwiese</title>
+      <link>http://localhost:1313/posts/post1/</link>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/post1/</guid>
+      <description>Die Stromerwiese wurde mittels Spendengelder renoviert.</description>
+    </item>
+    <item>
+      <title>Briefkasten</title>
+      <link>http://localhost:1313/posts/post2/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/post2/</guid>
+      <description>Wir haben einen Briefkasten in der Melli beese Schule installiert um besser erreichbar zu sein.</description>
+    </item>
+    <item>
+      <title>Weihnachtsbaum</title>
+      <link>http://localhost:1313/posts/post3/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/post3/</guid>
+      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+    </item>
+    <item>
+      <title>Weihnachtsbaum 2</title>
+      <link>http://localhost:1313/posts/post4/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/post4/</guid>
+      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+    </item>
+    <item>
+      <title>Weihnachtsbaum 3</title>
+      <link>http://localhost:1313/posts/post4-copy/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/post4-copy/</guid>
+      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+    </item>
+  </channel>
+</rss>

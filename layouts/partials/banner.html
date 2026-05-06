@@ -1,0 +1,18 @@
+{{ $section_pages := where .Site.RegularPages "Section" "sections" }}
+<div id="banner-wrapper">
+  {{ if .Site.Params.banner.htmlBefore }}
+  {{ partial "custom-html-before-banner.html" . }}
+  {{ end }}
+  <div id="banner"
+     class="container-fluid text-white text-center mb-5"
+     style="background-image:url('{{ (printf "images/%s" .Site.Params.banner.logo) | relURL }}');
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;">
+
+    <div class="mt-4 fs-4">
+      
+    </div>
+    <h2 class="fs-4 mt-4">{{ .Site.Params.subtitle }}</h2>
+  </div>
+</div>

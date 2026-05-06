@@ -1,0 +1,109 @@
+<footer class="mt-auto">
+  <div class="container">
+    <div class="row p-3">
+      <div class="col">
+        {{with .Site.Params.contact.email }}
+        <div>
+          <strong>{{ i18n "contact" }}</strong>
+        </div>
+        <div>
+          <a target="_blank" href="mailto:{{.}}">{{.}}</a>
+        </div>
+        {{ end }}
+        {{with .Site.Params.contact.address }}
+        <div class="mt-2">
+          <strong>{{ i18n "address" }}</strong>
+        </div>
+        <ul class="address">
+          {{ range . }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        {{with .Site.Params.contact.phones }}
+        <div class="mt-2">
+          <strong>{{ i18n "phone" (len .) }}</strong>
+        </div>
+        <ul class="phones">
+          {{ range . }}
+          <li>
+            <a href="tel:{{ . }}">{{ . }}</a>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        <div>
+          <ul class="social">
+            {{if and .Site.Params.mastodon.instance .Site.Params.mastodon.userName }}
+            <li>
+              <a target="_blank"
+                 rel="me"
+                 href="{{.Site.Params.mastodon.instance}}/{{.Site.Params.mastodon.userName}}"><i class="bi bi-mastodon"></i></a>
+            </li>
+            {{ end }}
+            {{with .Site.Params.repos.gitlab }}
+            <li>
+              <a target="_blank" href="{{.}}"><i class="bi bi-gitlab"></i></a>
+            </li>
+            {{ end }}
+            {{with .Site.Params.repos.github }}
+            <li>
+              <a target="_blank" href="{{.}}"><i class="bi bi-github"></i></a>
+            </li>
+            {{ end }}
+            {{with .Site.Params.repos.git }}
+            <li>
+              <a target="_blank" href="{{.}}"><i class="bi bi-git"></i></a>
+            </li>
+            {{ end }}
+            {{with .Site.Params.contact.email }}
+            <li>
+              <a target="_blank" href="mailto:{{.}}"><i class="bi bi-envelope-fill"></i></a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        {{ if .Site.Menus.sections }}
+        <div>
+          <strong>{{ i18n "whatwedo" }}</strong>
+        </div>
+        {{ range .Site.Menus.sections.ByWeight }}
+        <div>
+          <a href="{{ relLangURL .URL }}">{{ .Name }}</a>
+        </div>
+        {{ end }}
+        {{ end }}
+        {{ if .Site.Menus.about }}
+        <div class="mt-2">
+          <strong>{{ i18n "whoweare" }}</strong>
+        </div>
+        {{ range .Site.Menus.about.ByWeight }}
+        <div>
+          <a href="{{ relLangURL .URL }}">{{ .Name }}</a>
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="col">
+        {{ if .Site.Menus.legal }}
+        <div>
+          <strong>{{ i18n "legal" }}</strong>
+        </div>
+        {{ range .Site.Menus.legal.ByWeight }}
+        <div>
+          <a href="{{ relLangURL .URL }}">{{ .Name }}</a>
+        </div>
+        {{ end }}
+        {{ if .Site.Params.logoLicense }}
+        <div class="mt-2">
+          <img src="{{ (printf "images/%s" .Site.Params.logoLicense) | relURL }}"
+               alt="License logo">
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</footer>

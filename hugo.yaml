@@ -1,0 +1,15 @@
+baseURL: 'http://localhost'
+defaultContentLanguage: de
+title: 'Förderverein'
+theme: 'hugo-landing-sections'
+
+author:
+  name: Tom
+
+languages:
+  de:
+    languageCode: de
+    languageName: Deutsch
+
+pagination:
+  pagerSize: 4

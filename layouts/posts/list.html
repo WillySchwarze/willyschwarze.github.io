@@ -1,0 +1,93 @@
+{{ define "main" }}
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ $sorted := sort $posts "Date" "desc" }}
+{{ $paginator := .Paginate $sorted }}
+
+<div class="section-header section-header-base">
+        <div class="container">
+          <h1 class="Contentpage">Aktuelle Projekte:</h1>
+        </div>
+</div>
+
+<div class="container">
+
+    
+
+ {{ range $paginator.Pages }}
+
+    <div class="card mb-4 post-card">
+
+        <div class="row g-0">
+
+            <div class="col-md-4">
+                {{ with .Resources.GetMatch .Params.img }}
+                <img src="{{ .RelPermalink }}" class="img-fluid rounded-start post-image">
+                {{ end }}
+
+            </div>
+
+            <div class="col-md-8">
+
+                <div class="card-body">
+
+                    <h3 class="card-title posttitle">
+                    <a href="{{ .Permalink }}" class="text-decoration-none">
+                        {{ .Title }}
+                    </a>
+                    </h3>
+
+                    <small class="text-muted">
+                    {{ .Date.Format "02.01.2006" }}
+                    </small>
+
+                    <p class="card-text mt-2">
+                    {{ .Summary }}
+                    </p>
+
+                    <a href="{{ .Permalink }}" class="btn btn-sm btn-outline-primary">
+                    Weiterlesen →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+{{ end }}
+        
+        <div class="post-pagination text-center">
+
+            {{ if gt $paginator.TotalPages 1 }}
+
+            <nav>
+
+            {{ if $paginator.HasPrev }}
+
+            <a href="{{ $paginator.Prev.URL }}" class="btn btn-outline-primary me-2">
+            ← Neuere
+            </a>
+
+            {{ end }}
+
+            Seite {{ $paginator.PageNumber }} von {{ $paginator.TotalPages }}
+
+            {{ if $paginator.HasNext }}
+
+            <a href="{{ $paginator.Next.URL }}" class="btn btn-outline-primary ms-2">
+            Ältere →
+            </a>
+
+            {{ end }}
+
+            </nav>
+
+            {{ end }}
+
+        </div>
+
+
+</div>
+{{ end }}
