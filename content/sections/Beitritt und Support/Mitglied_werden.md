@@ -10,6 +10,6 @@ Der Förderverein engagiert sich überall dort, wo zusätzliche Ideen und finanz
 
 Eine Mitgliedschaft ist unkompliziert, freiwillig und jederzeit kündbar. Auch ohne aktive Mitarbeit leisten Sie mit Ihrem Beitrag einen wertvollen Beitrag für unsere Schulgemeinschaft.
 
-➡️ Den [Mitgliedsantrag](/sections/beitritt-und-support/anmeldung/) können Sie ganz einfach über unser Formular zur PDF-Generierung erstellen und herunterladen.
+Den [Mitgliedsantrag](/sections/beitritt-und-support/anmeldung/) können Sie ganz einfach über unser Formular zur PDF-Generierung erstellen und herunterladen.
 
-Diesen unterschriebenen Antrag dann bitte in den [Briefkasten](/sections/beitritt-und-support/anmeldung/) neben dem Sekretariat in der Schule einwerfen.
+Diesen unterschriebenen Antrag dann bitte in den [Briefkasten](/posts/briefkasten/) neben dem Sekretariat in der Schule einwerfen.

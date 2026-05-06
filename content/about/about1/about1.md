@@ -1,10 +1,10 @@
 ---
-title: "Über Uns"
+title: "Kontakt"
 weight: 1
 
 menu:
   about:
-    name: "Über Uns"
+    name: "Kontakt"
     weight: 1
 ---
 ### Überschrift 1

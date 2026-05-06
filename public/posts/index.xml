@@ -6,41 +6,83 @@
     <description>Recent content in index on Förderverein</description>
     <generator>Hugo</generator>
     <language>de</language>
-    <lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Ranzenregal für den Schulhof</title>
+      <link>http://localhost:1313/posts/ranzenregal/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ranzenregal/</guid>
+      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+    </item>
+    <item>
       <title>Stromerwiese</title>
-      <link>http://localhost:1313/posts/post1/</link>
+      <link>http://localhost:1313/posts/stromerwiese/</link>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post1/</guid>
+      <guid>http://localhost:1313/posts/stromerwiese/</guid>
       <description>Die Stromerwiese wurde mittels Spendengelder renoviert.</description>
     </item>
     <item>
       <title>Briefkasten</title>
-      <link>http://localhost:1313/posts/post2/</link>
+      <link>http://localhost:1313/posts/briefkasten/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post2/</guid>
+      <guid>http://localhost:1313/posts/briefkasten/</guid>
       <description>Wir haben einen Briefkasten in der Melli beese Schule installiert um besser erreichbar zu sein.</description>
     </item>
     <item>
+      <title>Dreibein-Kessel für Feuerschale</title>
+      <link>http://localhost:1313/posts/kochgeschirr/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/kochgeschirr/</guid>
+      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+    </item>
+    <item>
+      <title>Finanzielle Unterstützung für Klassenfahrten</title>
+      <link>http://localhost:1313/posts/klassenfahrten/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/klassenfahrten/</guid>
+      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+    </item>
+    <item>
+      <title>Finanzielle Unterstützung für Toilettenrenovierung</title>
+      <link>http://localhost:1313/posts/sch%C3%BClerprojekt_wth/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/sch%C3%BClerprojekt_wth/</guid>
+      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+    </item>
+    <item>
+      <title>Laugh n learn</title>
+      <link>http://localhost:1313/posts/laugh_n_learn/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/laugh_n_learn/</guid>
+      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+    </item>
+    <item>
+      <title>Sprayer Projekt</title>
+      <link>http://localhost:1313/posts/sprayer_projekt/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/sprayer_projekt/</guid>
+      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+    </item>
+    <item>
+      <title>Tischtennisplatten &#43; Tischtennisschläger</title>
+      <link>http://localhost:1313/posts/tischtennis/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/tischtennis/</guid>
+      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+    </item>
+    <item>
       <title>Weihnachtsbaum</title>
-      <link>http://localhost:1313/posts/post3/</link>
+      <link>http://localhost:1313/posts/weihnachtsbaum/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post3/</guid>
+      <guid>http://localhost:1313/posts/weihnachtsbaum/</guid>
       <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
     </item>
     <item>
-      <title>Weihnachtsbaum 2</title>
-      <link>http://localhost:1313/posts/post4/</link>
-      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post4/</guid>
-      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
-    </item>
-    <item>
-      <title>Weihnachtsbaum 3</title>
-      <link>http://localhost:1313/posts/post4-copy/</link>
+      <title>Mülltonne</title>
+      <link>http://localhost:1313/posts/m%C3%BClltonne/</link>
       <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post4-copy/</guid>
+      <guid>http://localhost:1313/posts/m%C3%BClltonne/</guid>
       <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
     </item>
   </channel>

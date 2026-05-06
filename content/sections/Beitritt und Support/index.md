@@ -1,10 +1,10 @@
 ---
-title: Beitritt und Support
-img: section2.png
+title: Beitritt/Support
+img: support.jpg
 slogan: Slogan Sektion 2
 menu:
   sections:
-    name: "Beitritt und Support"
+    name: "Beitritt/Support"
     weight: 2
     
 weight: 20
