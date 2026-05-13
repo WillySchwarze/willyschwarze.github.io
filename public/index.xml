@@ -6,7 +6,7 @@
     <description>Recent content on Förderverein</description>
     <generator>Hugo</generator>
     <language>de</language>
-    <lastBuildDate>Wed, 06 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kontakt</title>
@@ -27,7 +27,7 @@
       <link>http://localhost:1313/sections/%C3%BCber-uns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/sections/%C3%BCber-uns/</guid>
-      <description>&lt;p&gt;Wir sind der Förderverein der Melli-Beese-Grund- und Oberschule.&#xA;Unser Vereinsleben ist zwanglos, hinter keiner Veranstaltung steht ein Muß. Was wir tun, tun&#xA;wir für unsere Kinder. Jeder ist willkommen! Helfen auch Sie ob finanziell&#xA;oder aktiv und&#xA;werden sie Mitglied im Förderverein&lt;/p&gt;</description>
+      <description></description>
     </item>
     <item>
       <title>Beitritt/Support</title>
@@ -58,11 +58,11 @@
       <description>&lt;p&gt;Von kleinen Verbesserungen bis zu großen Aktionen – wir machen Ideen möglich und sichtbar.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Ranzenregal für den Schulhof</title>
-      <link>http://localhost:1313/posts/ranzenregal/</link>
-      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ranzenregal/</guid>
-      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+      <title>Toilettenrenovierung</title>
+      <link>http://localhost:1313/posts/sch%C3%BClerprojekt_wth/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/sch%C3%BClerprojekt_wth/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stromerwiese</title>
@@ -83,28 +83,21 @@
       <link>http://localhost:1313/posts/kochgeschirr/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/kochgeschirr/</guid>
-      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+      <description></description>
     </item>
     <item>
       <title>Finanzielle Unterstützung für Klassenfahrten</title>
       <link>http://localhost:1313/posts/klassenfahrten/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/klassenfahrten/</guid>
-      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
-    </item>
-    <item>
-      <title>Finanzielle Unterstützung für Toilettenrenovierung</title>
-      <link>http://localhost:1313/posts/sch%C3%BClerprojekt_wth/</link>
-      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/sch%C3%BClerprojekt_wth/</guid>
-      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+      <description></description>
     </item>
     <item>
       <title>Laugh n learn</title>
       <link>http://localhost:1313/posts/laugh_n_learn/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/laugh_n_learn/</guid>
-      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+      <description></description>
     </item>
     <item>
       <title>Sprayer Projekt</title>
@@ -118,7 +111,7 @@
       <link>http://localhost:1313/posts/tischtennis/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/tischtennis/</guid>
-      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+      <description></description>
     </item>
     <item>
       <title>Weihnachtsbaum</title>
@@ -132,7 +125,14 @@
       <link>http://localhost:1313/posts/m%C3%BClltonne/</link>
       <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/m%C3%BClltonne/</guid>
-      <description>Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.</description>
+      <description></description>
+    </item>
+    <item>
+      <title>Ranzenregal für den Schulhof</title>
+      <link>http://localhost:1313/posts/ranzenregal/</link>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ranzenregal/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/about1/about1/</loc>
   </url><url>
@@ -19,11 +19,11 @@
   </url><url>
     <loc>http://localhost:1313/highlights/highlight3/highlight3/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/posts/sch%C3%BClerprojekt_wth/</loc>
+    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/ranzenregal/</loc>
-    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/stromerwiese/</loc>
     <lastmod>2026-03-20T00:00:00+00:00</lastmod>
@@ -35,9 +35,6 @@
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/klassenfahrten/</loc>
-    <lastmod>2026-03-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/sch%C3%BClerprojekt_wth/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/laugh_n_learn/</loc>
@@ -54,6 +51,9 @@
   </url><url>
     <loc>http://localhost:1313/posts/m%C3%BClltonne/</loc>
     <lastmod>2026-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ranzenregal/</loc>
+    <lastmod>2026-01-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/sections/</loc>
   </url><url>

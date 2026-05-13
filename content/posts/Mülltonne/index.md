@@ -2,9 +2,7 @@
 title: "Mülltonne"
 date: 2026-03-10
 draft: false
-
+type: "posts"
 img: 
-summary: Wir stellten der Schule zum letzten Weihnachtsfest folgenden Baum und weiters.
+summary:
 ---
-
-###### Hallo

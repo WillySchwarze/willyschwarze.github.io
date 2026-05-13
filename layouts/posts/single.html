@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+{{ $image := .Resources.GetMatch .Params.img }}
+
+<div class="project-hero"
+    {{ if $image }}
+        style="background-image: url('{{ $image.RelPermalink }}')"
+    {{ end }}>
+
+    <div class="project-overlay">
+
+        <article class="project-paper">
+    
+            {{ if not .IsHome }}
+            <div class="container">
+                <a href="/" onclick="history.back(); return false;" class="back-btn">
+                    ← Zurück
+                </a>
+            </div>
+            {{ end }}
+
+            <h1>{{ .Title }}</h1>
+            
+            <div class="project-meta">
+                {{ .Date.Format "02.01.2006" }}
+            </div>
+
+            <div class="project-content">
+                {{ .Content }}
+            </div>
+
+        </article>
+
+    </div>
+
+</div>
+
+{{ end }}

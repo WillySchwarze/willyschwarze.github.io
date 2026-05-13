@@ -24,9 +24,9 @@
 
               <h3 class="card-title">{{ .Title }}</h3>
 
-              <div class="card-text">
-                <small>{{ .Summary }}</small>
-              </div>
+              <small>
+                  {{ .Summary | plainify | htmlUnescape | truncate 250 }}
+                </small>
 
             </div>
 

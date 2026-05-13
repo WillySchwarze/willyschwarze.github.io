@@ -1,19 +1,14 @@
 ---
-title: Target 1
+title: Wer sind wir?
 icon: question-circle
 weight: 10
 ---
+Wir sind der Förderverein der Melli-Beese Grund- und Oberschule.
+Gemeinsam helfen wir der Schule, Projekte und Erlebnisse für unsere Kinder zu ermöglichen. 
+Dabei kann es sich um alles mögliche handeln. Ob Renovierungen, Klassenfahrten oder Unterstützung von Projekttagen oder Exkursionen, wir helfen wo wir können.
+Beispiele für unsere Aktivitäten finden sie in unserer Post Sektion. Schaut gern dort vorbei! Unser Vereinsleben ist zwanglos und hinter keiner Veranstaltung steht ein Muss.  Jeder ist willkommen!
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo
-volutpat enim quis dapibus. Nullam tristique diam ut tellus maximus gravida.
-Proin sed consectetur lacus.
-
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-- Phasellus convallis velit nec justo malesuada, eget pellentesque augue
-  pretium.
-- Aenean vel lacus blandit, hendrerit sapien ac, pretium tortor.
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-- Phasellus convallis velit nec justo malesuada, eget pellentesque augue
-  pretium.
-- Aenean vel lacus blandit, hendrerit sapien ac, pretium tortor.
+Helfen auch Sie ob finanziell
+oder aktiv und
+werden sie Mitglied im Förderverein
 

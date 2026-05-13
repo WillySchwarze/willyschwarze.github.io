@@ -2,7 +2,9 @@
 
 <html lang="{{ .Site.Language.Lang }}">
   {{ partial "head.html" .}}
-  {{ partial "banner.html" .}}
+  {{ if not (and (eq .Type "posts") .IsPage) }}
+    {{ partial "banner.html" . }}
+  {{ end }}
   {{ if .Site.Params.maintenance }}
   {{ partial "maintenance.html" . }}
 {{ else }}
