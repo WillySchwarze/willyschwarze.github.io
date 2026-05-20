@@ -15,17 +15,19 @@ function toggleKontoinhaber() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("DOM geladen");
 
-  const btn = document.getElementById("pdfBtn");
+  document.getElementById("anmeldung-form")
+  .addEventListener("submit", function (e) {
 
-  if (!btn) {
-    console.log("Button nicht gefunden");
-    return;
-  }
+    e.preventDefault();
 
-  btn.addEventListener("click", function () {
-    console.log("PDF FUNKTION LÄUFT");
+    const form = document.getElementById("anmeldung-form");
+
+    console.log(form.reportValidity());
+
+    if(!form.reportValidity()) {
+      return;
+    }
 
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
@@ -43,12 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const iban = document.getElementById("iban")?.value || "";
     const bic = document.getElementById("bic")?.value || "";
     const kreditinstitut = document.getElementById("Kreditinstitut")?.value || "";
+    const pay = document.getElementById("pay")?.value || "";
 
     const abweichend = document.getElementById("abweichend")?.checked;
 
     // Kontoinhaber Logik
     let kontoName = vorname + " " + nachname;
-    let kontoAdresse = adresse + ", " + ort;
+    let kontoOrt = ort;
+    let kontoAdresse = adresse;
 
     if (abweichend) {
       const kVor = document.getElementById("kontoInhVor")?.value || "";
@@ -57,7 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const kOrt = document.getElementById("kontoInhPLZ")?.value || "";
 
       kontoName = kVor + " " + kNach;
-      kontoAdresse = kStr + ", " + kOrt;
+      kontoAdresse = kStr;
+      kontoOrt = kOrt;
     }
 
     // =====================
@@ -65,26 +70,150 @@ document.addEventListener("DOMContentLoaded", function () {
     // =====================
 
     // Titel
-    doc.setFontSize(18);
-    doc.text("Mitgliedsantrag", 20, 20);
+    doc.setFontSize(25);
+    doc.setFont("helvetica", "bold");
+    doc.text("Antrag auf Mitgliedschaft", 20, 20);
+    doc.setFontSize(8);
+    doc.setFont("helvetica", "normal");
+    doc.text("Bitte beachten Sie: Gemäß der maßgeblichen Satzung können alle juristischen und volljährigen natürlichen Personen Mitglied",20 ,30);
+    doc.text("werden, die die Ziele des Vereins unterstützen und fördern wollen. Aus der Mitgliedschaft ergibt sich kein Anspruch auf Aufnahme",20 ,34);
+    doc.text("eines Kindes an dieser Schule.",20 ,38);
 
     doc.setFontSize(12);
-
+    doc.setFont("helvetica", "bold");
     // Persönliche Daten
-    doc.text("Persönliche Daten", 20, 40);
-    doc.text(`Name: ${vorname} ${nachname}`, 20, 50);
-    doc.text(`Adresse: ${adresse}`, 20, 60);
-    doc.text(`PLZ/Ort: ${ort}`, 20, 70);
-    doc.text(`Telefon: ${phone}`, 20, 80);
-    doc.text(`Email: ${email}`, 20, 90);
+    doc.text("Vorliegend beantrage ich die Aufnahme in den „Förderverein Perspektiven e.V.“:", 20, 50);
+    
+    
+    
+    //Name
+    doc.text(`${vorname} ${nachname}`, 20, 60);
+    doc.line(20, 62, 185, 62);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(11);
+    doc.text(`Vorname und Name`, 20, 67);
+
+    //Adresse
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(12);
+    doc.text(`${adresse}`, 20, 77);
+    doc.line(20, 79, 100, 79);
+    doc.text(`${ort}`, 105, 77);
+    doc.line(105, 79, 185, 79);
+
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(11);
+    doc.text(`Straße und Hausnummer`, 20, 84);
+    doc.text(`Postleitzahl und Ort`, 105, 84);
+
+    //Telefon und Mail
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(12);
+    doc.text(`${phone}`, 20, 94);
+    doc.line(20, 96, 100, 96);
+    doc.text(`${email}`, 105, 94);
+    doc.line(105, 96, 185, 96);
+    
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(11);
+    doc.text(`Telefonnummer`, 20, 101);
+    doc.text(`Emailadresse`, 105, 101);
+
+    //DSGVO
+    doc.setFontSize(8)
+    doc.setFont("helvetica", "normal");
+    doc.text("Es wird zugesichert, dass Ihre Daten entsprechend DSGVO sowie BDSG verarbeitet und nur zu vereinsinternen Zwecken",20 ,111);
+    doc.text("verwendet werden. Nach erfolgter Aufnahme wird erklärt, dass entsprechend der jeweils gültigen Satzung und Beitragsordnung",20 ,115);
+    doc.text("der Verein in seiner ideellen Zielsetzung unterstützt wird.",20 ,119);
+
+    doc.setFontSize(11)
+    doc.text(`Das aufgenommene Mitglied erklärt sich des Weiteren bereit ${pay}€ jährlich als Mitglieds-`,20 ,130);
+    doc.text("beitrag zu zahlen.",20, 135);
+
+    //SEPA
+    doc.setFontSize(20);
+    doc.setFont("helvetica", "bold");
+    doc.text("SEPA-Lastschriftmandat", 20, 150);
+    doc.setFontSize(8);
+    doc.setFont("helvetica", "normal");
+    doc.text("für wiederkehrende Zahlungen", 105, 150);
+
+    doc.setFontSize(11)
+    doc.text("Ich ermächtige hiermit den Förderverein Zahlungen von meinem Konto mittels Lastschrift",20 ,160);
+    doc.text("einzuziehen. Zugleich weise ich mein Kreditinstitut an, die vom Förderverein auf mein Konto",20 ,164);
+    doc.text("gezogenen Lastschriften einzulösen.",20 ,168);
+
+    doc.setFontSize(8)
+    doc.text("Hinweis: Sie können innerhalb von acht Wochen, beginnend mit dem Belastungsdatum, die Erstattung des belasteten Betrages",20 ,175);
+    doc.text("verlangen. Es gelten die mit meinem Kreditinstitut vereinbarten Bedingungen.",20 ,179);
+
+    //SEPA DATEN
+    //Kontoinhaber
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(12);
+    doc.text(`${kontoName} `, 20, 187);
+    doc.line(20, 189, 185, 189);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(11);
+    doc.text(`Kontoinhaber - Vorname, Name`, 20, 194);
+
+    //Konto Adresse
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(12);
+    doc.text(`${kontoAdresse}`, 20, 204);
+    doc.line(20, 206, 100, 206);
+    doc.text(`${kontoOrt}`, 105, 204);
+    doc.line(105, 206, 185, 206);
+
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(11);
+    doc.text(`Straße und Hausnummer`, 20, 211);
+    doc.text(`Postleitzahl und Ort`, 105, 211);
+
+    //BIC KREDITINSTITUT
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(12);
+    doc.text(`${bic}`, 20, 221);
+    doc.line(20, 223, 100, 223);
+    doc.text(`${kreditinstitut}`, 105, 221);
+    doc.line(105, 223, 185, 223);
+
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(11);
+    doc.text(`BIC`, 20, 228);
+    doc.text(`Kreditinstitut`, 105, 228);
+    
+    // IBAN
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(12);
+    doc.text(`${iban} `, 20, 238);
+    doc.line(20, 240, 185, 240);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(11);
+    doc.text(`IBAN`, 20, 245);
+
+    doc.setFontSize(11);
+    doc.setFont("helvetica", "bold");
+    doc.text("Dieses SEPA-Lastschriftmandat gilt für die Mitgliedschaft des oben genannten Antragstellers.",20 ,253);
+    doc.text("Die Mandatsreferenz wird separat mitgeteilt.",20 ,257);
+
+    doc.setFont("helvetica", "normal");
+    doc.text("Ort, Datum", 20, 265);
+    doc.line(40, 265, 70, 265);
+    doc.text("Unterschrift", 105, 265);
+    doc.line(110, 265, 70, 265);
+
+    /*
+    doc.text(`IBAN: ${iban}`, 20, 220);
+    doc.text(`BIC: ${bic}`, 20, 230);
+    doc.text(`Kreditinstitut: ${kreditinstitut}`, 20, 240);
+    doc.text(`Adresse: ${adresse}`, 20, 70);
+    doc.text(`PLZ/Ort: ${ort}`, 20, 80);
+    doc.text(`Telefon: ${phone}`, 20, 90);
+    doc.text(`Email: ${email}`, 20, 100);
 
     // SEPA
-    doc.text("Bankverbindung (SEPA)", 20, 110);
-    doc.text(`Kontoinhaber: ${kontoName}`, 20, 120);
-    doc.text(`Adresse: ${kontoAdresse}`, 20, 130);
-    doc.text(`IBAN: ${iban}`, 20, 140);
-    doc.text(`BIC: ${bic}`, 20, 150);
-    doc.text(`Kreditinstitut: ${kreditinstitut}`, 20, 160);
+  
 
     // Erklärung
     doc.text("Hiermit beantrage ich die Mitgliedschaft.", 20, 180);
@@ -95,10 +224,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     doc.text("Unterschrift:", 20, 230);
     doc.line(20, 235, 100, 235);
-
+    */
     // Download
     doc.save("mitgliedsantrag.pdf");
   });
+
 });
 </script>
 
@@ -172,17 +302,22 @@ document.addEventListener("DOMContentLoaded", function () {
   <div class="form-row">
     <div class="form-group">
       <!-- <label>BIC</label><br> -->
-      <input type="text" id="bic" placeholder="BIC"><br><br>
+      <input type="text" id="bic" placeholder="BIC" required><br><br>
     </div>
     <div class="form-group">
       <!-- <label>Kreditinstitut</label><br> -->
-      <input type="text" id="Kreditinstitut" placeholder="Kreditinstitut"><br><br>
+      <input type="text" id="Kreditinstitut" placeholder="Kreditinstitut" required><br><br>
     </div>    
   </div>  
   <div class="form-row">
     <div class="form-group">
       <!-- <label>IBAN</label><br> -->
       <input type="text" id="iban" placeholder="IBAN: DE00 0000 0000 0000 0000 00" pattern="DE[0-9]{20}" title="Bitte gültige deutsche IBAN eingeben" required><br><br>
+    </div>
+    <div class="form-group">
+      <!-- <label>Gewünschter Jährlicher Betrag</label><br> -->
+      <input type="number" id="pay" placeholder="Gewünschter Jährlicher Zahlbetrag (min 20,00€)" min="20" step="0.01" title="Bitte gültigen Betrag eingeben" required>
+      <br><br>
     </div>
   </div>   
 
