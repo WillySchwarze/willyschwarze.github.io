@@ -1,5 +1,5 @@
 ---
-title: "15 Mitglieder"
+title: "49 Mitglieder"
 weight: 10
 icon: "bi-people"
 ---
