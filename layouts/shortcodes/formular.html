@@ -131,11 +131,11 @@ document.addEventListener("DOMContentLoaded", function () {
   <div class="form-row">
     <div class="form-group">
         <!-- <label>Telefonnummer</label><br> -->
-        <input type="tel" id="phone" placeholder="Telefonnummer"><br><br>
+        <input type="tel" id="phone" placeholder="Telefonnummer" pattern="[0-9+\s\/()-]{6,}" required><br><br>
     </div>  
     <div class="form-group">
         <!-- <label>Emailadresse</label><br> -->
-        <input type="email" id="email" placeholder="Emailadresse"><br><br>
+        <input type="email" id="email" placeholder="Emailadresse" required><br><br>
     </div>    
   </div>
 
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <div class="form-row">
     <div class="form-group">
       <!-- <label>IBAN</label><br> -->
-      <input type="text" id="iban" placeholder="IBAN: DE00 0000 0000 0000 0000 00" required><br><br>
+      <input type="text" id="iban" placeholder="IBAN: DE00 0000 0000 0000 0000 00" pattern="DE[0-9]{20}" title="Bitte gültige deutsche IBAN eingeben" required><br><br>
     </div>
   </div>   
 
@@ -191,6 +191,6 @@ document.addEventListener("DOMContentLoaded", function () {
         Ich ermächtige den Verein, Zahlungen mittels SEPA-Lastschrift einzuziehen.
   </label><br><br>
 
-  <button type="button" id="pdfBtn" class="pdf-btn">PDF erstellen</button>
+  <button type="submit" id="pdfBtn" class="pdf-btn">PDF erstellen</button>
 
 </form>

@@ -10,5 +10,3 @@ menu:
 weight: 30
 description: Beschreibung Sektion 3
 ---
-
-Rechenschaftsbericht 2025

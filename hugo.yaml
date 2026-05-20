@@ -13,3 +13,11 @@ languages:
 
 pagination:
   pagerSize: 4
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute: true
+        
