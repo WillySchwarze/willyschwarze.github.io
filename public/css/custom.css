@@ -294,7 +294,6 @@ nav.navbar {
 .post-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    background-color: red;
 }
 .post-card {
     border: 1px solid #dcdcdc;
