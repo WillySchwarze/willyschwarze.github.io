@@ -1,0 +1,23 @@
+{{ $section_pages := where .Site.RegularPages "Section" "sections" }}
+<div id="banner-wrapper">
+  {{ if .Site.Params.banner.htmlBefore }}
+  {{ partial "custom-html-before-banner.html" . }}
+  {{ end }}
+  <div id="banner" class="container-fluid text-white text-center mb-5">
+    <h1>
+      <img src="{{ (printf "images/%s" .Site.Params.banner.logo) | relURL }}"
+           class="d-none d-lg-inline"
+           alt="{{ .Site.Title }} logo">
+      <img src="{{ (printf "images/%s" .Site.Params.banner.logoSmallDevices) | relURL }}"
+           class="d-inline d-lg-none"
+           alt="{{ .Site.Title }} small logo">
+    </h1>
+    <div class="mt-4 fs-4">
+      {{ range $section_pages }}
+      <a href="{{ .Permalink }}"
+         class="badge slogan bg-light text-dark px-3 py-2 mx-2 my-2">{{ .Params.slogan }}</a>
+      {{ end }}
+    </div>
+    <h2 class="fs-4 mt-4">{{ .Site.Params.subtitle }}</h2>
+  </div>
+</div>

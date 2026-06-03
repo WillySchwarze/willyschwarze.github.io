@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "postinstall": "./npm-postinstall.sh"
+  },
+  "dependencies": {
+    "@idotj/mastodon-embed-timeline": "^4.7.0",
+    "bootstrap": "^5.3.6",
+    "bootstrap-icons": "^1.13.1"
+  }
+}

@@ -1,0 +1,15 @@
+- id: contact
+  translation: "Contacta'ns!"
+- id: address
+  translation: "Adreça"
+- id: phone
+  translation:
+    one: "Telefon"
+    other: "Telèfons"
+
+- id: whatwedo
+  translation: "Què fem"
+- id: whoweare
+  translation: "Nosaltres"
+- id: legal
+  translation: "Legal"

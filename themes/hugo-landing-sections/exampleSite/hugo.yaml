@@ -1,0 +1,52 @@
+baseURL: 'https://hugo-landing-sections.demo.vadecodi.net'
+defaultContentLanguage: en
+title: 'Example Site of hugo-landing-sections '
+theme: 'hugo-landing-sections'
+
+disableKinds:
+  - section
+  - taxonomy
+
+params:
+  author: Author Example
+  contact:
+    email: info@example.com
+    phones:
+      - (+00) 000 000 000
+      - (+11) 111 111 111
+  description: "hugo-landing-sections theme example site"
+  fediverseCreator: "@Mastodon@mastodon.social"
+  mastodon:
+    btnReload: ''
+    btnSeeMore: ''
+    hideCounterBar: true
+    hideReplies: true
+    instance: https://mastodon.social
+    timeline: true
+    timelineType: profile
+    userId: "13179"
+    userName: "@Mastodon"
+  repos:
+    git: https://codeberg.org/VaDeCodiNet/hugo-landing-sections
+
+languages:
+  ca:
+    disabled: false
+    languageCode: ca
+    languageName: Català
+    params:
+      subtitle: Un subtítol genial
+
+  es:
+    disabled: false
+    languageCode: es
+    languageName: Castellano
+    params:
+      subtitle: Un subtítulo genial
+
+  en:
+    disabled: false
+    languageCode: en
+    languageName: English
+    params:
+      subtitle: A cool subtitle

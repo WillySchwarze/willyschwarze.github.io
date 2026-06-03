@@ -1,0 +1,52 @@
+defaultContentLanguage: en
+title: ''
+
+module:
+  hugoVersion:
+    extended: false
+    min: 0.116.0
+
+params:
+  author: ''
+  banner:
+    htmlBefore: False
+    logo: logo_banner.png
+    logoSmallDevices: logo_banner.png
+  contact:
+    email: ''
+    phones: []
+  description: ''
+  favicon: 'flieger.svg'
+  fediverseCreator: ''
+  htmlAfterFooter: False
+  logoLicense: ''
+  maintenance: False
+  mastodon:
+    btnReload: ''
+    btnSeeMore: ''
+    hideCounterBar: True
+    hideReplies: True
+    instance: ''
+    timeline: False
+    timelineType: profile
+    userId: ''
+    userName: ''
+  menu:
+    logo: flieger.svg
+    logoSmallDevices: flieger.svg
+  og:
+    image: ''
+  repos:
+    git: ''
+    github: ''
+    gitlab: ''
+  style:
+    fontFamily: helvetica, arial, sans-serif
+    fontSize: 16px
+    textColor: '#000000'
+    brandColor: '#9ccefc'
+    brandColor2: '#0960af'
+    brandColor3: '#0e4477'
+    footerColor: '#ffffff'
+  subTitle: ''
+  twitter: ''

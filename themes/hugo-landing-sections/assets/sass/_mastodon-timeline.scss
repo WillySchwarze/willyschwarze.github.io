@@ -1,0 +1,30 @@
+.mastodon-timeline {
+  background-color: $brand-color;
+}
+
+.mt-container {
+  height: auto !important;
+  border-radius: $card-border-radius;
+  font-size: small;
+}
+
+.mt-body {
+  padding: 1em 0 !important;
+}
+
+.mt-post {
+  @extend .col-12;
+  @extend .col-lg-3;
+
+  border-bottom: none !important;
+}
+
+.mt-post:hover {
+  border-radius: $card-border-radius;
+}
+
+.mt-post-preview-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

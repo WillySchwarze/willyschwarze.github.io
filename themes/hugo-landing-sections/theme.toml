@@ -1,0 +1,12 @@
+name = "Hugo Landing Sections"
+license = "AGPL"
+licenselink = "https://codeberg.org/VaDeCodiNet/hugo-landing-sections/src/branch/main/LICENSE"
+description = "A landing page with sections"
+homepage = "https://codeberg.org/VaDeCodiNet/hugo-landing-sections"
+demosite = "https://hugo-landing-sections.demo.vadecodi.net"
+tags = ["bootstrap", "landing", "sections", "company", "organization"]
+features = ["responsive", "multilingual", "mastodon-timeline"]
+
+[author]
+  name = "Mònica Ramírez Arceda"
+  homepage = "https://vadecodi.net"

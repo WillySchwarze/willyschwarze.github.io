@@ -1,0 +1,38 @@
+{{ $section_pages := where .Site.RegularPages "Section" "sections" }}
+<div class="sections pb-4">
+  <div class="container">
+    <div class="row pack mt-4">
+      {{ with .Site.GetPage "sections" }}
+      {{ if ne .Title "" }}
+      <h2>{{ .Title }}</h2>
+      {{ end }}
+      {{ end }}
+      {{ range $section_pages }}
+      <div class="col-md-4 mb-3">
+        <a href="{{ .Permalink }}" class="index-anchor">
+          <div class="card h-100">
+            {{ if .Params.img }}
+            {{ with .Resources.Match .Params.img }}
+            {{ range . }}
+            <img width="100%"
+                 src="{{ .RelPermalink }}"
+                 class="card-img-top"
+                 alt="{{ .Title }}">
+            {{ end }}
+            {{ end }}
+            {{ end }}
+            <div class="card-body">
+              <h3 class="card-title">{{ .Title }}</h3>
+              <div class="card-text">
+                <small>
+                  {{ .Summary | plainify | htmlUnescape | truncate 250 }} <i class="bi bi-plus-square"></i>
+                </small>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

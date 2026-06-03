@@ -1,0 +1,15 @@
+- id: contact
+  translation: "Contact us!"
+- id: address
+  translation: "Adress"
+- id: phone
+  translation:
+    one: "Phone"
+    other: "Phones"
+
+- id: whatwedo
+  translation: "What we do"
+- id: whoweare
+  translation: "Who we are"
+- id: legal
+  translation: "Legal"

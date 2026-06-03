@@ -1,0 +1,177 @@
+html,
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  height: 100%;
+}
+
+.navbar {
+  border-radius: 0;
+  background-color: $brand-color-3;
+}
+
+.navbar-default {
+  border-color: transparent;
+  background-color: transparent;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-link {
+  color: $brand-color;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.nav-link:hover {
+  background-color: $brand-color;
+  color: $brand-color-2;
+}
+
+.dropdown a:hover {
+  background-color: inherit;
+  color: $brand-color-2;
+}
+
+.nav-item .hcl-icon {
+  line-height: 1;
+  vertical-align: middle;
+}
+
+header {
+  border-bottom: 1px solid $brand-color-3;
+}
+
+#banner-wrapper,
+.section-header {
+  position: relative;
+  margin-top: 66px;
+}
+
+#banner {
+  padding: 100px 30px;
+  background-color: $brand-color;
+}
+
+.maintenance {
+  background-color: $brand-color;
+  color: $brand-color-2;
+  height: 100%;
+}
+
+.maintenance .container {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar-brand {
+  padding: 10px;
+}
+
+footer {
+  border-top: 1px solid $brand-color-3;
+  background-color: $brand-color-3;
+  font-size: small;
+  color: $footer-color;
+}
+
+ul.address,
+ul.phones {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+ul.social {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+ul.social li {
+  list-style: none;
+  display: inline;
+  padding: 5px 15px 0 0;
+  font-size: 1.25em;
+}
+
+ul.social li:hover {
+  opacity: 0.7;
+}
+
+.social img {
+  width: 20px;
+}
+
+.pack {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  float: none;
+}
+
+.highlights .card-body {
+  padding: 0;
+}
+
+.highlights .card-title,
+.highlights .card-text {
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+}
+
+.highlights .card-title {
+  color: $brand-color-2;
+  background-color: $brand-color;
+  border-radius: var(--bs-card-border-radius) var(--bs-card-border-radius) 0 0;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.highlights .card-title-img {
+  border-radius: 0;
+}
+
+.section-header {
+  background-color: $brand-color;
+  color: $brand-color-2;
+  padding: 1em;
+}
+
+.index-anchor {
+  text-decoration: none;
+  color: $text-color;
+
+  &:hover {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+article.section {
+  margin-bottom: 5em;
+}
+
+.slogan {
+  text-decoration: none;
+  color: $brand-color;
+}
+
+.slogan:hover {
+  text-decoration: none;
+  background-color: $brand-color-2 !important;
+  color: white !important;
+}
+
+body a {
+  color: $brand-color;
+}
+
+body a:hover {
+  color: $brand-color-2;
+}

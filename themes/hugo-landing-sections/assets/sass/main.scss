@@ -1,0 +1,21 @@
+/* stylelint-disable */
+$font-family: {{ site.Params.style.fontFamily }};
+$font-size: {{ site.Params.style.fontSize }};
+$text-color: {{ site.Params.style.textColor }};
+$brand-color: {{ site.Params.style.brandColor }};
+$brand-color-2: {{ site.Params.style.brandColor2 }};
+$brand-color-3: {{ site.Params.style.brandColor3 }};
+$footer-color: {{ site.Params.style.footerColor }};
+/* stylelint-enable */
+
+$navbar-light-color: rgba($brand-color, 0.65);
+$navbar-light-icon-color: rgba($brand-color, 0.75);
+$navbar-light-toggler-border-color: rgba($brand-color, 0.15);
+$navbar-light-active-color: $brand-color;
+$navbar-light-brand-hover-color: $brand-color;
+$navbar-light-hover-color: $brand-color;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "layout";
+@import "mastodon-timeline";
+@import "custom";
