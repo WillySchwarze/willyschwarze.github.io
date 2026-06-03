@@ -1,4 +1,6 @@
 name: Deploy Hugo site to Pages
+id: deployment
+uses: actions/deploy-pages@v4
 
 on:
   push:
@@ -22,6 +24,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Debug theme + public folder
+        run: |
+          echo "===== THEME ====="
+          ls -R themes || true
+
+          echo "===== PUBLIC (before build) ====="
+          ls -R public || true
+          
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
