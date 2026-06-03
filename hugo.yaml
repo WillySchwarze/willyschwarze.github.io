@@ -1,4 +1,4 @@
-baseURL: 'https://willySchwarze.github.io'
+baseURL: 'https://willySchwarze.github.io/'
 defaultContentLanguage: de
 title: 'Förderverein'
 theme: 'hugo-landing-sections'
